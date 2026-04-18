@@ -10,11 +10,6 @@ builder.Services.AddDbContext<Context>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("ConnectionStrings:EFCoreConsole"))
 );
 
-//using (var context = new Context())
-//{
-//    context.Database.EnsureCreated();
-//}
-
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
