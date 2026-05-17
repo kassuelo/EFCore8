@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace Curso.API.Entities
+﻿namespace Curso.Domain.Entities
 {
     public class Filme
     {

@@ -1,4 +1,4 @@
-﻿namespace Curso.API.Entities
+﻿namespace Curso.Domain.Entities
 {
     public class Diretor
     {

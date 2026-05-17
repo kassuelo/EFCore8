@@ -1,7 +1,7 @@
-﻿using Curso.API.Entities;
+﻿using Curso.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Curso.API.DbContexts
+namespace Curso.Repo.Contexts
 {
     public class Context(DbContextOptions<Context> options) : DbContext(options)
     {
@@ -18,17 +18,17 @@ namespace Curso.API.DbContexts
                 .IsRequired();
 
             modelBuilder.Entity<Diretor>().HasData(
-       new Diretor { Id = 1, Nome = "Steven Spielberg" },
-       new Diretor { Id = 2, Nome = "Christopher Nolan" },
-       new Diretor { Id = 3, Nome = "Quentin Tarantino" },
-       new Diretor { Id = 4, Nome = "Martin Scorsese" },
-       new Diretor { Id = 5, Nome = "James Cameron" },
-       new Diretor { Id = 6, Nome = "Ridley Scott" },
-       new Diretor { Id = 7, Nome = "Peter Jackson" },
-       new Diretor { Id = 8, Nome = "Tim Burton" },
-       new Diretor { Id = 9, Nome = "Clint Eastwood" },
-       new Diretor { Id = 10, Nome = "David Fincher" }
-   );
+                new Diretor { Id = 1, Nome = "Steven Spielberg" },
+                new Diretor { Id = 2, Nome = "Christopher Nolan" },
+                new Diretor { Id = 3, Nome = "Quentin Tarantino" },
+                new Diretor { Id = 4, Nome = "Martin Scorsese" },
+                new Diretor { Id = 5, Nome = "James Cameron" },
+                new Diretor { Id = 6, Nome = "Ridley Scott" },
+                new Diretor { Id = 7, Nome = "Peter Jackson" },
+                new Diretor { Id = 8, Nome = "Tim Burton" },
+                new Diretor { Id = 9, Nome = "Clint Eastwood" },
+                new Diretor { Id = 10, Nome = "David Fincher" }
+           );
 
             modelBuilder.Entity<Filme>().HasData(
                 new Filme { Id = 1, Titulo = "Inception", Ano = 2010, DiretorId = 2 },

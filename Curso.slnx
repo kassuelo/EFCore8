@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="Curso.API/Curso.API.csproj" />
+  <Project Path="Curso.Domain/Curso.Domain.csproj" Id="9726ccd5-9f25-4995-8bd2-7af9b5ff7d5a" />
+  <Project Path="Curso.Repo/Curso.Repo.csproj" Id="28240711-373e-40d4-9f46-d6ee5ecee717" />
 </Solution>
